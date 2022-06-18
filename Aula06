@@ -1,0 +1,200 @@
+'''
+def FizzBuzz(n):
+    if n % 2 == 0 and n % 4 == 0:
+        return 'FizzBuzz'
+    elif n % 2 == 0:
+        return 'Fizz'
+    elif n % 4 == 0:
+        return 'Buzz'
+    else:
+        return n
+n = int(input('Digite um valor: '))
+fizzbuzz = FizzBuzz(n)
+print(fizzbuzz)
+'''
+
+'''
+def somar():
+    return valor01 + valor02
+valor01 = int(input('Digite um valor: '))
+valor02 = int(input('Digite outro valor: '))
+soma = somar()
+print(f'O resultado é: {soma}')
+'''
+
+'''
+def idade():
+    return anoAtual - anoNasc
+dia = int(input('Digite o dia do seu nascimento: '))
+mes = int(input('Digite o mês do seu nascimento: '))
+anoNasc = int(input('Digite o ano do seu nascimento: '))
+anoAtual = int(input('Digite o ano atual: '))
+iDade = anoAtual - anoNasc
+nasc = idade()
+print(f'Se você nasceu no dia {dia}, do mês {mes} do ano {anoNasc} você tem ou está prestes a completar {iDade} anos')
+'''
+
+'''
+def cauculaIdade(dia, mes, ano):
+    if mes == 6 and dia >= 17:
+        idade = 2022 - ano
+    elif mes == 6 and dia < 17:
+    elif mes > 6:
+        idade = 2022 - ano - 1
+    elif mes < 6:
+        idade = 2022 - ano
+'''
+'''
+alunos = ['Andé', 'Bianca', 'Carlos', 'Daniela']
+print(alunos)
+
+'''
+'''
+alunos[0] = 'Emanuele'
+print(alunos)
+alunos[4] = 'Fabio'
+print(alunos)
+'''
+'''
+for item in alunos:
+    print(item)
+
+for i in range(0, len(alunos)):
+    print(alunos[i])
+'''
+'''
+alunos = ['Andé', 'Bianca', 'Carlos', 'Daniela']
+alunos.append('Gabriel')
+print(alunos)
+'''
+
+'''
+lista_nomes = []
+for i in range(0,5):
+    nome = input('Nome: ')
+    lista_nomes.append(nome)
+
+print(lista_nomes)
+
+Ou jeito de corno:
+
+for alunos in range(0, 4):
+    lista = alunos
+aluno1 = input('Insira um nome: ')
+aluno2 = input('Insira um nome: ')
+aluno3 = input('Insira um nome: ')
+aluno4 = input('Insira um nome: ')
+aluno5 = input('Insira um nome: ')
+
+alunos = aluno1, aluno2, aluno3, aluno4, aluno5
+print(alunos)
+'''
+'''
+lista_idades = []
+lista_nomes = []
+for i in range(0,5):
+    nome = input('Nome: ')
+    idade = int(input('Idade: '))
+    lista_nomes.append(nome)
+    lista_idades.append(idade)
+
+print(lista_nomes, lista_idades)
+'''
+
+'''
+lista_idades = []
+lista_nomes = []
+for i in range(0,5):
+    nome = input('Nome: ')
+    idade = int(input('Idade: '))
+    lista_nomes.append(nome)
+    lista_idades.append(idade)
+
+for i in range(0, len(lista_nomes)):
+    print(f'Nome: {lista_nomes[i]} - Idade: {lista_idades[i]}')
+'''
+'''
+lista = []
+for a in range(0,10):
+    aluno = input('Digite o nome do aluno: ')
+    media = float(input('Informe a média do aluno: '))
+    if media >= 7:
+        lista.append(aluno)
+print(lista)
+'''
+'''
+lista = []
+for n in range(0,10):
+    numero = int(input('Digite um valor: '))
+    lista.append(numero)
+
+for numero in lista:
+    if numero % 2 == 0:
+        lista.remove(numero)
+print(lista)
+'''
+'''
+nome = input('Nome: ')
+idade = int(input('Idade: '))
+cpf = input('CPF: ')
+endereco = input('Endereço: ')
+
+dados_pessoa = {}
+
+dados_pessoa['nome'] = nome
+dados_pessoa['idade'] = idade
+dados_pessoa['cpf'] = cpf
+dados_pessoa['endereco'] = endereco
+
+print(dados_pessoa)
+'''
+'''
+alturas = {}
+nomes = []
+
+for i in range(0,5):
+    nome = input('Nome: ')
+    altura = float(input('Altura: '))
+    alturas[nome] = altura
+
+for chave in alturas.keys():
+    if alturas[chave] >= 1.8:
+        nomes.append(chave)
+
+print(nomes)
+'''
+'''
+lista_pares = []
+for i in range(0,10):
+    num = int(input(f'Digite o {i+1}º número: '))
+    if num % 2 == 0:
+        lista_pares.append(num)
+
+print(lista_pares)
+'''
+'''
+lista1 = []
+lista2 = []
+for n in range(0,5):
+    numero = int(input('Digite um número: '))
+    lista1.append(numero)
+
+for num in lista1:
+    num1 = num ** 2
+    lista2.append(num1)
+print(lista1)
+print(lista2)
+
+ou
+
+lista1 = []
+lista2 = []
+for n in range(0,5):
+    numero = int(input('Digite um número: '))
+    lista1.append(numero)
+
+for num in lista1:
+    lista2.append(num ** 2)
+print(lista1)
+print(lista2)
+'''
